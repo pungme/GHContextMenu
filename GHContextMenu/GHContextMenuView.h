@@ -43,5 +43,6 @@ typedef NS_ENUM(NSInteger, GHContextMenuActionType){
 @protocol GHContextOverlayViewDelegate <NSObject>
 
 - (void) didSelectItemAtIndex:(NSInteger) selectedIndex forMenuAtPoint:(CGPoint) point;
-
+- (void) didStartContextMenu;
+- (void) didEndContextMenu;
 @end
